@@ -23,7 +23,7 @@ for label in labels:
         cv2.imshow('frame', frame)
         time.sleep(2)
 
-        if cv2.waitKey(0) & 0xFF == ord('q'):
+        if 0xFF == ord('q'):
             break
     cap.release()
 cv2.destroyAllWindows()  # Close all OpenCV windows at the end
